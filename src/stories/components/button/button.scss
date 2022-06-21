@@ -1,23 +1,23 @@
 .button {
-    height: 80px;
-    width: 640px;
-    border-radius: 16px;
-    padding: 0px, 24px, 0px, 24px;
-  
-    &--enabled{
-        background: #59B9C6;
-        color: #ffffff;
-    }
-    &--hovere{
-        background: #66D8E8;
-        color: #ffffff;
-    }
-    &--pressed{
-        background: #59B9C6;
-        color: #ffffff;
-    }
-    &--disabled{
-        background: rgba(0, 0, 0, 0.09);
-        color: black;
-    }
+  height: 80px;
+  width: 640px;
+  border-radius: 16px;
+  padding: 0px, 24px, 0px, 24px;
+
+  &--enabled {
+    background: #59b9c6;
+    color: #ffffff;
+  }
+  &--hovere {
+    background: #66d8e8;
+    color: #ffffff;
+  }
+  &--pressed {
+    background: #59b9c6;
+    color: #ffffff;
+  }
+  &--disabled {
+    background: rgba(0, 0, 0, 0.09);
+    color: black;
+  }
 }

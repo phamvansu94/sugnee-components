@@ -1,11 +1,11 @@
-import React from "react";
-import "./button.scss";
+import React from 'react';
+import './button.scss';
 
 interface ButtonProps {
   /**
    * Button state
    */
-  state?: "enabled" | "hovere" | "pressed" | "disabled";
+  state?: 'enabled' | 'hovere' | 'pressed' | 'disabled';
   /**
    * Button contents
    */
@@ -21,7 +21,7 @@ interface ButtonProps {
  */
 export const Button = ({ state, label }: ButtonProps) => {
   return (
-    <button type='button' className={["button", `button--${state}`].join(" ")}>
+    <button type="button" className={['button', `button--${state}`].join(' ')}>
       {label}
     </button>
   );

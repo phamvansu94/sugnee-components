@@ -1,0 +1,49 @@
+.icon-button {
+  border-radius: 16px;
+  &--large {
+    width: 160px;
+    height: 160px;
+  }
+
+  &--small {
+    width: 80px;
+    height: 80px;
+  }
+
+  &--enabled {
+    background: #ffffff;
+    border: 2px solid #dadada;
+  }
+  &--hovere {
+    background: #ffffff;
+    border: 2px solid #dadada;
+    & img {
+      mix-blend-mode: hard-light;
+    }
+  }
+  &--pressed {
+    background: #ffffff;
+    border: 2px solid #dadada;
+    & img {
+      mix-blend-mode: normal;
+    }
+  }
+  &--disabled {
+    // background: #ffffff;
+    border: 2px solid #dadada;
+    & img {
+      mix-blend-mode: darken;
+    }
+  }
+}
+
+.img {
+  &-large {
+    width: 96px;
+    height: 96px;
+  }
+  &-small {
+    width: 48px;
+    height: 48px;
+  }
+}
