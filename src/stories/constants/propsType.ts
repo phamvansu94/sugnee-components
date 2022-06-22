@@ -10,6 +10,15 @@ export enum SIZE {
   SMALL = 'small',
 }
 
+export enum ICON {
+  CLOSE = 'close',
+  ADD = 'add',
+  CALL = 'call',
+  EDIT = 'edit',
+  BEFORE = 'before',
+  NEXT = 'next',
+}
+
 export enum IMAGE {
   AVATAR_01 = 'avatar_01',
   AVATAR_02 = 'avatar_02',

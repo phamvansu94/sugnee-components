@@ -1,34 +1,23 @@
 import React from 'react';
 import './iconButton.scss';
-import add from '../..//assets/add.svg';
+import add from '../../assets/add.svg';
 import call from '../../assets/call.svg';
 import before from '../../assets/before.svg';
 import close from '../../assets/close.svg';
 import next from '../../assets/next.svg';
 import edit from '../../assets/edit.svg';
+import { ICON, SIZE, STATE } from '../../constants/propsType';
 
 interface IconButtonProps {
-  /**
-   * Button state
-   */
-  state?: 'enabled' | 'hovere' | 'pressed' | 'disabled';
-  /**
-   * Button size
-   */
-  size?: 'large' | 'small';
-  /**
-   * Button icon
-   */
-  icon: 'close' | 'add' | 'call' | 'edit' | 'before' | 'next';
-  /**
-   * Optional click handler
-   */
+  state: STATE;
+
+  size: SIZE;
+
+  icon: ICON;
+
   onClick?: () => void;
 }
 
-/**
- * Primary UI component for user interaction
- */
 export const IconButton = ({ state, size, icon }: IconButtonProps) => {
   const icons = {
     close: close,

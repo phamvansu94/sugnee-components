@@ -1,24 +1,15 @@
 import React from 'react';
+import { STATE } from '../../constants/propsType';
 import './button.scss';
 
 interface ButtonProps {
-  /**
-   * Button state
-   */
-  state?: 'enabled' | 'hovere' | 'pressed' | 'disabled';
-  /**
-   * Button contents
-   */
+  state: STATE;
+
   label: string;
-  /**
-   * Optional click handler
-   */
+
   onClick?: () => void;
 }
 
-/**
- * Primary UI component for user interaction
- */
 export const Button = ({ state, label }: ButtonProps) => {
   return (
     <button type="button" className={['button', `button--${state}`].join(' ')}>

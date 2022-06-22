@@ -15,7 +15,7 @@ import { IMAGE, SIZE, STATE } from '../../constants/propsType';
 interface AvatarProps {
   state: STATE;
 
-  size?: SIZE;
+  size: SIZE;
 
   image: IMAGE;
 }
